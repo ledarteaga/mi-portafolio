@@ -13,9 +13,45 @@ body {
           box-sizing: border-box;
 }
 
+@-webkit-keyframes changeColor {
+  from {
+    color: #364e36;
+  }
+  to {
+    color: #58e953;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    color: #364e36;
+  }
+  to {
+    color: #58e953;
+  }
+}
+
+@-webkit-keyframes smile {
+  from {
+    color: #ff2828;
+  }
+  to {
+    color: #831111;
+  }
+}
+
+@keyframes smile {
+  from {
+    color: #ff2828;
+  }
+  to {
+    color: #831111;
+  }
+}
+
 .contenedor {
   margin: 60px;
-  width: 844px;
+  max-width: 866px;
 }
 
 .contenedor .presentacion .avatar {
@@ -33,5 +69,15 @@ body {
 
 .contenedor a {
   color: #58e953;
+}
+
+.contenedor span {
+  -webkit-animation: changeColor 8s infinite alternate;
+          animation: changeColor 8s infinite alternate;
+}
+
+.contenedor .smile {
+  -webkit-animation: smile 5s infinite alternate;
+          animation: smile 5s infinite alternate;
 }
 /*# sourceMappingURL=styles.css.map */
