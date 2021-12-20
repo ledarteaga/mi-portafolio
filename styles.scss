@@ -60,6 +60,12 @@ body {
    margin: 60px;
    max-width: 866px;
 
+   @include for-phone-only() {
+       margin: 20px auto;
+       max-width: none;
+       width: 80%;
+   }
+
   
 
     .presentacion {
