@@ -49,6 +49,16 @@ body {
   }
 }
 
+.lenguage {
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.lenguage a {
+  text-decoration: none;
+}
+
 .contenedor {
   margin: 60px;
   max-width: 866px;
@@ -58,7 +68,7 @@ body {
   .contenedor {
     margin: 20px auto;
     max-width: none;
-    width: 80%;
+    width: 90%;
   }
 }
 

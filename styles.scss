@@ -55,6 +55,16 @@ body {
     }
 }
 
+.lenguage {
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
 .contenedor {
 
    margin: 60px;
@@ -63,7 +73,7 @@ body {
    @include for-phone-only() {
        margin: 20px auto;
        max-width: none;
-       width: 80%;
+       width: 90%;
    }
 
   
