@@ -5,7 +5,7 @@ html {
 
 body {
   font-size: 19.2px;
-  background: #0f150f;
+  background: #0b410b;
   font-family: 'Fira Mono', monospace;
   color: #ffffff;
 }
@@ -64,8 +64,14 @@ body {
 }
 
 .contenedor {
-  margin: 60px;
+  margin: 60px auto;
+  padding: 40px;
   max-width: 866px;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #0b410b;
+  -webkit-box-shadow: 25px 25px 50px #093709, -25px -25px 50px #0d4b0d;
+          box-shadow: 25px 25px 50px #093709, -25px -25px 50px #0d4b0d;
 }
 
 @media (max-width: 599px) {
@@ -82,10 +88,17 @@ body {
 }
 
 .contenedor .presentacion .avatar img {
-  border-radius: 30px;
-  background: linear-gradient(145deg, #101610, #0e130e);
-  -webkit-box-shadow: 27px 27px 54px #080c08, -27px -27px 54px #161e16;
-          box-shadow: 27px 27px 54px #080c08, -27px -27px 54px #161e16;
+  -webkit-transition: -webkit-box-shadow ease 200ms;
+  transition: -webkit-box-shadow ease 200ms;
+  transition: box-shadow ease 200ms;
+  transition: box-shadow ease 200ms, -webkit-box-shadow ease 200ms;
+  border-radius: 22px;
+}
+
+.contenedor .presentacion .avatar img:hover {
+  background: linear-gradient(45deg, #0c460c, #0a3b0a);
+  -webkit-box-shadow: 5px -5px 14px #093709, -5px 5px 14px #0d4b0d;
+          box-shadow: 5px -5px 14px #093709, -5px 5px 14px #0d4b0d;
 }
 
 .contenedor p {
@@ -96,7 +109,7 @@ body {
   color: #58e953;
 }
 
-.contenedor span {
+.contenedor .bright {
   -webkit-animation: changeColor 8s infinite alternate;
           animation: changeColor 8s infinite alternate;
 }
@@ -104,5 +117,24 @@ body {
 .contenedor .smile {
   -webkit-animation: smile 5s infinite alternate;
           animation: smile 5s infinite alternate;
+}
+
+.contenedor .txt {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 600ms;
+  transition: -webkit-filter 600ms;
+  transition: filter 600ms;
+  transition: filter 600ms, -webkit-filter 600ms;
+  font-weight: bold;
+}
+
+.contenedor .txt:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 /*# sourceMappingURL=styles.css.map */
