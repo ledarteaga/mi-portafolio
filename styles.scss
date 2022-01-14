@@ -83,7 +83,9 @@ body {
    @include for-phone-only() {
        margin: 20px auto;
        max-width: none;
+       padding: 0;
        width: 90%;
+       box-shadow: none;
    }
 
   
